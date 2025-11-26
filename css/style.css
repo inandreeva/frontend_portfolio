@@ -110,6 +110,7 @@ section {
 
 .hero {
   padding-top: 120px;
+  padding-bottom: 20px;
 }
 
 .hero .container {
@@ -244,8 +245,8 @@ section {
 
 .about {
   background: var(--surface);
-  border-radius: 48px 48px 0 0;
-  margin-top: 80px;
+  /* border-radius: 48px 48px 0 0; */
+  /* margin-top: 80px; */
 }
 
 .about__grid {
