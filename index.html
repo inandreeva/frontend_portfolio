@@ -1,138 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Irina Andreeva Frontend</title>
-        <link rel="stylesheet" href="./css/main.css">
-        <script src="https://kit.fontawesome.com/e3d70ff76d.js"
-            crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <nav class="nav">
-            <div class="container">
-                <div class="nav-row">
-                    <a class="logo" href="./index.html"><strong>Frontend
-                        </strong>Portfolio</a>
-                    <ul class="nav-list">
-                        <li class="nav-list__item"><a href="./index.html"
-                                class="nav-list__link nav-list__link--active">Projects</a></li>
-                        <li class="nav-list__item"><a href="./skills.html"
-                                class="nav-list__link">Skills</a></li>
-                        <li class="nav-list__item"><a href="./skills.html"
-                                class="nav-list__link">CV</a></li>
-                        <li class="nav-list__item"><a href="./contacs.html"
-                                class="nav-list__link">Contacts</a></li>
-                    </ul>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Irina Andreeva — Full-Stack Developer & Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="logo" href="#">IRINA ANDREEVA</a>
+        <nav class="primary-nav">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </nav>
+        <a class="cta" href="#contact">Let’s talk</a>
+      </div>
+    </header>
 
-        <header class="header">
-            <div class="header__wrapper">
-                <h1 class="header__title">
-                    <strong>Hi, my name is <em>Ira</em></strong><br>
-                    a frontend developer
-                </h1>
-                <div class="header__text">
-                    <p>with passion for learning and creating</p>
-                </div>
-                <a href="#!" class="btn">Download CV</a>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <p class="eyebrow">full-stack developer</p>
+            <h1>I build performant web apps backed by product-level craft.</h1>
+            <p class="lede">
+              Frontend-focused engineer with an 8+ year background in graphic
+              and UX design. I ship React/Next.js experiences, shape scalable UI
+              systems, and bridge design decisions with TypeScript, Node, and
+              Three.js prototypes.
+            </p>
+            <div class="hero__actions">
+              <!-- <a class="btn btn--primary" href="#projects">View work</a> -->
+              <a class="btn btn--ghost" href="#skills">See skills</a>
             </div>
-        </header>
+            <ul class="hero__stats">
+              <li>
+                <span>8+</span>
+                <p>years in design & product</p>
+              </li>
+              <li>
+                <span>25+</span>
+                <p>web/app launches shipped</p>
+              </li>
+              <li>
+                <span>3</span>
+                <p>design systems in production</p>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__visual">
+            <img
+              src="./img/ira_portfolio.jpg  "
+              alt="Developer workspace"
+              class="hero__image"
+            />
+            <div class="hero__badge">code × design</div>
+            <!-- <div class="hero__card">
+              <p>Next role?</p>
+              <strong>Open to frontend / full-stack teams</strong>
+            </div> -->
+          </div>
+        </div>
+      </section>
 
-        <main class="section">
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about__intro">
+            <p class="eyebrow">hybrid background</p>
+            <p>Designer turned engineer with a systems mindset</p>
+            <p>
+              I spent years crafting visual identities, editorial projects, and
+              UI kits before moving into full-stack development. That design
+              intuition still drives every architecture choice, interaction, and
+              line of code I ship.
+            </p>
+          </div>
+          <div class="about__grid">
+            <article>
+              <h3>Research first</h3>
+              <p>
+                User flows, problem framing, rapid prototyping in Figma and
+                code.
+              </p>
+            </article>
+            <article>
+              <h3>Build with intent</h3>
+              <p>
+                React, Next.js, TypeScript, and modern UI libraries with clean
+                CSS/Sass architecture.
+              </p>
+            </article>
+            <article>
+              <h3>Design systems</h3>
+              <p>
+                Document components, scale tokens, and keep teams aligned from
+                kickoff to delivery.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <!-- Skills -->
-            <div class="container">
-                <h1 class="title-1">Skills</h1>
-                <div class="skills-container">
-                    <div class="content-list">
-                        <h2 class="title-2">Frontend</h2>
-                        <ul class="content-list__items">
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                            <li>Bootstrap</li>
-                            <li>Adobe Xd</li>
-                        </ul>
-                    </div>
-                    <div class="content-list">
-                        <h2 class="title-2">Graphicdesign</h2>
-                        <ul class="content-list__items">
-                            <li>Adobe XD</li>
-                            <li>Adobe Iiustrator</li>
-                            <li>HTML</li>
-                            <li>Bootstrap</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <section id="skills" class="expertise">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">core stack</p>
+            <h2>What I bring to the table</h2>
+          </div>
+          <div class="expertise__list">
+            <article>
+              <h3>Frontend Engineering</h3>
+              <p>
+                JavaScript, TypeScript, React (Hooks, Context, basic Redux),
+                Next.js, Radix UI, shadcn/ui, Tailwind, Sass, accessibility and
+                responsive systems.
+              </p>
+              <span>Primary focus</span>
+            </article>
+            <article>
+              <h3>Full-Stack Delivery</h3>
+              <p>
+                Node fundamentals, API design, integration with CMS/Headless
+                backends, cloud deployments, and Three.js / WebGL for 3D
+                previews.
+              </p>
+              <span>Actively expanding</span>
+            </article>
+            <article>
+              <h3>Design & UX</h3>
+              <p>
+                UX research, prototyping, UI kits, typography, branding, and
+                motion deliverables using Figma, Adobe CC, and collaborative
+                workshops.
+              </p>
+              <span>Design roots</span>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <!-- Projects -->
-            <div class="container">
-                <h2 class="title-1">Projects</h2>
-                <ul class="projects">
-                    <li class="project">
-                        <a href="./project-page.html">
-                            <img src="./img/header_bg.png" alt="Project img"
-                                class="project__img">
-                            <h3 class="project__title">Title 1</h3>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="./project-page.html">
-                            <img src="./img/header_bg.png" alt="Project img"
-                                class="project__img">
-                            <h3 class="project__title">Title 2</h3>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="./project-page.html">
-                            <img src="./img/header_bg.png" alt="Project img"
-                                class="project__img">
-                            <h3 class="project__title">Title 3</h3>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="./project-page.html">
-                            <img src="./img/header_bg.png" alt="Project img"
-                                class="project__img">
-                            <h3 class="project__title">Title 4</h3>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="./project-page.html">
-                            <img src="./img/header_bg.png" alt="Project img"
-                                class="project__img">
-                            <h3 class="project__title">Title 5</h3>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="./project-page.html">
-                            <img src="./img/header_bg.png" alt="Project img"
-                                class="project__img">
-                            <h3 class="project__title">Title 6</h3>
-                        </a>
-                    </li>
+      <!-- <section id="projects" class="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">selected work</p>
+            <h2>Recent cross-disciplinary builds</h2>
+            <a class="link-inline" href="projects/">More case studies →</a>
+          </div>
+
+          <div class="projects__grid">
+            <article class="project-card">
+              <div class="project-card__visual">
+                <img
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                  alt="Planta OS interface preview"
+                />
+                <span>full-stack</span>
+              </div>
+              <div class="project-card__body">
+                <h3>Planta OS</h3>
+                <p>
+                  Next.js marketplace with personalized plant care playlists,
+                  dynamic filters, and motion-driven onboarding.
+                </p>
+                <ul>
+                  <li>Next.js · TypeScript</li>
+                  <li>Radix UI</li>
+                  <li>CMS integration</li>
                 </ul>
-            </div>
-        </main>
+              </div>
+            </article>
 
-        <footer class="footer">
-            <div class="container">
-                <ul class="social">
-                    <li class="social__item">
-                        <a href="#!"><i class="fa-brands fa-square-github
-                                icons__footer"></i></a>
-                    </li> <li class="social__item"><a href="#!"><i
-                                class="fa-brands
-                                fa-linkedin icons__footer"></i></a>
-                    </li>
+            <article class="project-card">
+              <div class="project-card__visual project-card__visual--alt">
+                <img
+                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+                  alt="Neon Lab immersive screens"
+                />
+                <span>frontend</span>
+              </div>
+              <div class="project-card__body">
+                <h3>Neon Lab</h3>
+                <p>
+                  Immersive performance hub with programmable gradients, WebGL
+                  scenes, and an editorial CMS crafted in close sync with the
+                  art team.
+                </p>
+                <ul>
+                  <li>React · Three.js</li>
+                  <li>Design system</li>
+                  <li>Custom CMS</li>
                 </ul>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__visual">
+                <img
+                  src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80"
+                  alt="Soft Geometry generative art"
+                />
+                <span>prototype</span>
+              </div>
+              <div class="project-card__body">
+                <h3>Soft Geometry</h3>
+                <p>
+                  NFT drop microsite with real-time shader controls, responsive
+                  layout exploration, and art direction for campaign assets.
+                </p>
+                <ul>
+                  <li>Three.js</li>
+                  <li>Motion design</li>
+                  <li>Brand kit</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="process">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">workflow</p>
+            <h2>How I partner with product teams</h2>
+          </div>
+          <ol class="process__steps">
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Discover</h3>
+                <p>Kickoffs, interviews, success metrics, and UX hypotheses.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Prototype</h3>
+                <p>
+                  Flows, wireframes, Figma prototypes, and technical spikes.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Build</h3>
+                <p>
+                  Implement modules with clean architecture, testing, and CI.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>04</span>
+              <div>
+                <h3>Launch & iterate</h3>
+                <p>QA, handoff, documentation, and ongoing optimization.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="contact__content">
+            <p class="eyebrow">get in touch</p>
+            <h2>Currently interviewing for frontend & full-stack roles</h2>
+            <p>
+              Tell me about your team, roadmap, and tech stack. I’ll reply with
+              relevant work samples and availability within one business day.
+            </p>
+            <div class="contact__links">
+              <a href="mailto:ira@guterco.de">ira@guterco.de</a>
             </div>
-        </footer>
-    </body>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Irina Andreeva</p>
+        <a
+          class="link-inline"
+          href="https://github.com/inandreeva"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <a
+          class="link-inline"
+          href="https://www.linkedin.com/in/irina-andreeva-38306076/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>
